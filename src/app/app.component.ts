@@ -5,7 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'Tour of Bad Guys';
-  jkin = "Not a Danger"
+  jkin = "Not a Danger";
+  events: string[] = [];
+  opened: boolean;
+
 }

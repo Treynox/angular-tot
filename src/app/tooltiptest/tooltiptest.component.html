@@ -1,0 +1,10 @@
+<h1>
+  Tool Tip Test
+</h1>
+<div>
+  <button #btnA class="tooltip" (click)="toggleTip()">Button A <app-tooltip *ngIf="showTip" class="tooltiptext"></app-tooltip></button>
+  
+  <br/>
+  <button #btnB class="tooltip" (click)="toggleTip()">Button B<app-tooltip *ngIf="showTip" class="tooltiptext"></app-tooltip></button>
+
+</div>

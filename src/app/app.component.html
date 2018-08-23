@@ -1,8 +1,20 @@
-<h1>{{ title }} - {{jkin}}</h1>
-<nav>
-    <a routerLink="/dashboard">Dashboard</a>
-     
-    <a routerLink="/heroes">Heroes</a>
-</nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h1>{{ title }} - {{jkin}}</h1>
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="push" [(opened)]="opened">
+        <nav>
+            <a routerLink="/dashboard">Dashboard</a>
+            <br/>
+            <a routerLink="/heroes">Bad Guys List</a>
+            <br/>
+            <a routerLink="/tooltip">Tool Tip Test</a>
+        </nav>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+        <app-messages></app-messages>
+    </mat-sidenav-content>
+</mat-sidenav-container>
