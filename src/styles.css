@@ -1,6 +1,15 @@
 /*Using Material Built in Theme*/
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+body { 
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+.basic-container {
+  padding: 30px;
+}
+
 /* You can add global styles to this file, and also import other style files */
 /* Application-wide Styles */
 /*

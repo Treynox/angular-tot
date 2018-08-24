@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tooltip',
@@ -6,16 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tooltip.component.css']
 })
 export class TooltipComponent implements OnInit {
+  @Input('message') message: string = "Default Mess"; 
+  showTip : boolean = false;
 
-  hiddenTip : boolean = true;
-
-  toggleTip() {
-    this.hiddenTip = !this.hiddenTip;
+  toggleShow() : void {
+    this.showTip = !this.showTip;
   }
 
   constructor() { }
 
   ngOnInit() {
+    this.message = this.message;
   }
 
 }

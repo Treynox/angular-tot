@@ -1,10 +1,12 @@
 <h1>
   Tool Tip Test
 </h1>
-<div>
-  <button #btnA class="tooltip" (click)="toggleTip()">Button A <app-tooltip *ngIf="showTip" class="tooltiptext"></app-tooltip></button>
-  
-  <br/>
-  <button #btnB class="tooltip" (click)="toggleTip()">Button B<app-tooltip *ngIf="showTip" class="tooltiptext"></app-tooltip></button>
+<div class="tool-tip-test">
+  <app-tooltip #btnAtool message="This is A"></app-tooltip>
+  <button #btnA mat-flat-button color="primary" (click)="toggleTipA()">Button A </button>
 
+  <br/>
+
+  <app-tooltip #btnBtool ></app-tooltip>
+  <button #btnB mat-flat-button color="primary" (click)="toggleTipB()">Button B</button>
 </div>

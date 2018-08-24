@@ -2,14 +2,14 @@
     <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
     <h1>{{ title }} - {{jkin}}</h1>
 </mat-toolbar>
-<mat-sidenav-container class="example-container">
+<mat-sidenav-container autosize="true" class="example-container">
     <mat-sidenav #sidenav mode="push" [(opened)]="opened">
         <nav>
-            <a routerLink="/dashboard">Dashboard</a>
+            <button mat-button routerLink="/dashboard">Dashboard</button>
             <br/>
-            <a routerLink="/heroes">Bad Guys List</a>
+            <button mat-button routerLink="/heroes">Bad Guys List</button>
             <br/>
-            <a routerLink="/tooltip">Tool Tip Test</a>
+            <button mat-button routerLink="/tooltip">Tool Tip Test</button>
         </nav>
     </mat-sidenav>
 

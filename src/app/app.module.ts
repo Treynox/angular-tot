@@ -86,6 +86,7 @@ import { TooltipComponent } from './tooltip/tooltip.component';
     MatSidenavModule,
     MatCheckboxModule,
     MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
